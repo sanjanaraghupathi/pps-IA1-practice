@@ -30,6 +30,10 @@ int input()
   scanf("%d",&x);
   return x;
 }
+void output(int a,int b,int c,int large)
+{
+   printf("%d is the the largest of three\n",large);
+}
 int main()
 {
   int a,b,c,lar;
@@ -38,6 +42,5 @@ int main()
   b=input();
   c=input();
   lar=cmp(a,b,c);
-  printf("%d is the the largest of three\n",lar);
   return 0;
 }
