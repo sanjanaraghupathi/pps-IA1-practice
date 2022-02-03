@@ -42,5 +42,6 @@ int main()
   b=input();
   c=input();
   lar=cmp(a,b,c);
+   output(a,b,c,lar);
   return 0;
 }
