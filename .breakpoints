@@ -4,8 +4,16 @@
       {
         "id": "7f8858ed-53c5-49ce-a624-a31c92012e8e",
         "line": 1,
-        "version": 2,
+        "version": 3,
         "index": 0
+      }
+    ],
+    "p5debuglog.txt": [
+      {
+        "id": "e164e140-f13b-43f5-9a19-8a63fe18da48",
+        "line": 6,
+        "version": 5,
+        "index": 243
       }
     ]
   }
