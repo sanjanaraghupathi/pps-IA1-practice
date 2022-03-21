@@ -1,33 +1,32 @@
-struct _complex
+#include<stdio.h>
+struct complex
 {
-float real,imaginary;
-}; 
-typedef struct _complex Complex();
-struct Complex input _complex()
+  int real,imaginary;
+};
+struct complex input_chellox()
 {
- struct complex a;
-  scanf("%f%f",&a.real,&a.imaginary);
-  return a;
+  struct complex k;
+  scanf("%d %d",&k.real,&k.imaginary);
+  return k;
 }
-Complex add(Complex a, Complex b)
+struct complex add_cmplx(struct complex a,struct complex b)
 {
-  struct complex;
+  struct complex c;
   c.real=a.real+b.real;
   c.imaginary=a.imaginary+b.imaginary;
   return c;
 }
-void output(Complex a, Complex b, Complex c)
+void output(struct complex a,struct complex b,struct complex c)
 {
-    printf("(%d + %di)+(%d + %di) is (%d + %di)\n",a.real,a.imaginary,b.real,b.imaginary,c.real,c.imaginary);
+  printf("(%d + %di)+(%d + %di) is (%d + %di)\n",a.real,a.imaginary,b.real,b.imaginary,c.real,c.imaginary);
 }
 int main()
 {
-  int a,b,c;
-  printf("enter first complex number a+bi in the form 'a b'\n");
- a=input_complex(); 
-  printf("enter second complex number a+bi in the form 'a b'\n");
-   b=input_complex();
-  c=add_complex;
+  struct complex a,b,c;
+  printf("enter the first complex number a+bi in the form 'a b'\n");
+  a=input_chellox();
+  printf("enter the first complex number a+bi in the form 'a b'\n");
+  b=input_chellox();
+  c=add_cmplx(a,b);
   output(a,b,c);
-  return 0;
 }

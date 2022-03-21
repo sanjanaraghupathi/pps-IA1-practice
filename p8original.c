@@ -1,17 +1,17 @@
 #include<stdio.h>
-struct _complex
+struct complex
 {
-float real,imaginary;
+  int real,imaginary;
 };
-struct Complex input_complex()
+struct complex input_complex()
 {
-  struct complex a;
-    scanf("%d %d",&a.real,&a.imaginary);
-  return a;
+  struct complex k;
+  scanf("%d %d",&k.real,&k.imaginary);
+  return k;
 }
 int get_n()
 {
-   int n;
+  int n;
   scanf("%d",&n);
   return n;
 }
@@ -55,4 +55,5 @@ int main()
   sum=add_n_complex(n,c);
   output(n,c,sum);
   return 0;
-  }
+
+}
